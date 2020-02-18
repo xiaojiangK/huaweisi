@@ -11,12 +11,20 @@ a:link,a:hover{
 img{
     max-width: 100%
 }
-button{
+button, input[type='submit']{
+    border: none;
     outline: none !important
 }
-.header{
-    overflow: hidden;
+.wrap>.main{
+    padding: 0 0 65px
+}
+.header, .wrap>.main, .footer{
     position: relative;
+}
+.header:after, .wrap>.main:after, .footer:after{
+    clear: both;
+    content: '';
+    display: block;
 }
 .header .top{
     width: 100%;
@@ -95,8 +103,6 @@ button{
 }
 .navbar .search{
     float: right;
-    outline: none;
-    border: none;
     height: 50px;
     padding: 0 50px;
     background: #e64a19
@@ -168,15 +174,193 @@ button{
     font-size: 12px
 }
 
+/* 底部 */
+.footer{
+    padding: 60px 0 0;
+    background: #333;
+}
+.footer .top{
+    padding: 0 0 50px;
+    border-bottom: 1px solid #5d5d5d;
+}
+.footer .top img{
+    width: 50px;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+}
+.footer .top span{
+    color: #fff;
+    font-size: 40px;
+    vertical-align: middle;
+}
+.footer .top input[type='text']{
+    width: 72%;
+    height: 32px;
+    float: left;
+}
+.footer .top input[type='submit']{
+    width: 24%;
+    color: #fff;
+    float: right;
+    background: #308438;
+}
+.footer .bom {
+    margin: 40px 0 60px;
+}
+.footer .bom .title{
+    color: #999;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+.footer .bom p,.footer .bom a{
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+.footer .bom ul{
+    overflow: hidden;
+}
+.footer .bom li{
+    float: left;
+    margin: 0 6px;
+}
+.footer .copyright{
+    color: #999;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    border-top: 1px solid #2b2b2b;
+}
 
-
-
-
-
-
-
-
-
+/* 公共 */
+.slider{
+    top: 50%;
+    right: 0;
+    width: 50px;
+    z-index: 9999;
+    position: fixed;
+    padding: 40px 0 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #308438
+}
+.slider li{
+    cursor: pointer;
+    margin: 0 0 40px;
+    text-align: center;
+}
+.message{
+    right: 0;
+    bottom: 100%;
+    z-index: 999;
+    width: 450px;
+    position: absolute;
+}
+.message .header{
+    width: 100%;
+    height: 65px;
+    text-indent: 40px;
+    line-height: 65px;
+    position: relative;
+    background-color: #308438;
+}
+.message .header span{
+    color: #fff;
+    font-size: 22px;
+}
+.message .header .icon{
+    top: 50%;
+    width: 24px;
+    right: 30px;
+    height: 5px;
+    cursor: pointer;
+    margin-top: -2px;
+    background: #fff;
+    position: absolute;
+    border-radius: 2px;
+}
+.message .main{
+    display: none;
+    overflow: hidden;
+    background: #f7f7f7;
+    padding: 25px 45px 66px;
+}
+.message .main p{
+    color: #999;
+    font-size: 18px;
+    margin: 0 0 25px;
+}
+.message .main input[type='text']{
+    width: 100%;
+    height: 45px;
+    color: #666;
+    border: none;
+    margin: 0 0 20px;
+    font-size: 18px;
+    text-indent: 24px;
+    background: #fff;
+}
+.message .main input::-webkit-input-placeholder{
+    color: #ccc;
+}
+.message .main input:-moz-input-placeholder{
+    color: #ccc;
+}
+.message .main input:-ms-input-placeholder{
+    color: #ccc;
+}
+.message .main input:-o-input-placeholder{
+    color: #ccc;
+}
+.message .main input:input-placeholder{
+    color: #ccc;
+}
+.message .main input[type='submit']{
+    width: 180px;
+    height: 45px;
+    color: #fff;
+    float: right;
+    font-size: 18px;
+    background: #308438;
+}
+.main>.ad{
+    overflow: hidden;
+    padding: 55px 0 0;
+    background: #eaeaea;
+}
+.main>.ad .title{
+    float: left;
+    color: #262626;
+    font-size: 20px;
+    padding: 0 10px 20px;
+    border-bottom: 2px solid #308438;
+}
+.main>.ad .address{
+    float: right;
+    font-size: 18px;
+}
+.main>.ad .address img{
+    width: 18px;
+    height: 16px;
+    margin: 0 2px 0 0;
+    vertical-align: middle;
+}
+.main>.ad .address a{
+    color: #666;
+    vertical-align: middle;
+}
+.main>.ad .address span{
+    color: #666;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+}
+.main>.ad .address .active{
+    color: #308438;
+}
 
 
 
@@ -212,6 +396,9 @@ button{
     .header .logo-box .icons img{
         width: 80%
     }
+    .wrap>.main{
+        padding: 0 0 50px
+    }
     .about{
         margin: 25px 0 40px
     }
@@ -234,6 +421,81 @@ button{
     }
     .about .col-2{
         margin: 0 0 15px;
+    }
+    .main>.ad{
+        padding: 20px 10px 0
+    }
+    .main>.ad .title{
+        font-size: 13px;
+        padding: 0 2px 10px;
+    }
+    .main>.ad .address{
+        font-size: 13px
+    }
+    .main>.ad .address img{
+        margin: 0;
+        width: 16px;
+        height: 14px;
+    }
+    .main>.ad .address span{
+        margin: 0 0 0 2px
+    }
+    .slider{
+        width: 40px;
+        padding: 25px 0 0;
+    }
+    .slider li{
+        margin: 0 0 25px
+    }
+    .message{
+        width: 100%;
+    }
+    .message .header{
+        height: 50px;
+        line-height: 50px;
+    }
+    .message .header span{
+        font-size: 18px
+    }
+    .message .main{
+        padding: 15px 20px 30px
+    }
+    .message .main input[type='submit']{
+        width: 155px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .footer .top span{
+        font-size: 22px
+    }
+    .footer .top img{
+        width: 25px;
+        margin: 0 5px 0 0
+    }
+    .footer .top .col-sm-6:first-child{
+        margin: 0 0 20px;
+    }
+    .footer .bom{
+        margin: 20px 0
+    }
+    .footer .bom .col-sm-4{
+        margin: 0 0 20px;
+    }
+    .footer .bom .title{
+        font-size: 16px;
+        margin: 0 0 10px;
+    }
+    .footer .bom p, .footer .bom a{
+        font-size: 12px;
+    }
+    .footer .bom img{
+        width: 80%;
+    }
+    .footer .copyright{
+        height: auto;
+        padding: 10px 0;
+        line-height: 20px;
+        font-size: 12px;
     }
 }
 @media (max-width: 360px) {
