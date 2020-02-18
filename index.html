@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="Chrome=1,IE=Edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <link rel="stylesheet" href="images/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="images/css/owl.carousel.css" />
+    <link rel="stylesheet" href="images/css/owl.theme.css" />
     <link rel="stylesheet" href="images/css/style.css" />
 </head>
 <body>
@@ -219,61 +221,71 @@
             <div class="product">
                 <div class="container">
                     <div class="row">
-                        <div class="prev">
-                            <img snextrc="images/icon-prev.png" alt="">
+                        <div class="arrow prev">
+                            <img src="images/icon-prev.png" alt="">
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-5 col-md-4 menu">
+                            <div class="title">Product Categories</div>
                             <ul>
-                                <li class="active">Product Categories</li>
-                                <li>IP67Constan Voltage</li>
-                                <li>Constant Voltage Uitra</li>
-                                <li>IP67 Constant Cuttent</li>
-                                <li>IP67 Constant Voltage</li>
+                                <li><a href="product-list.html">IP67Constan Voltage</a></li>
+                                <li><a href="product-list.html">Constant Voltage Uitra</a></li>
+                                <li><a href="product-list.html">IP67 Constant Cuttent</a></li>
+                                <li><a href="product-list.html">IP67 Constant Voltage</a></li>
                             </ul>
                         </div>
-                        <ul class="col-sm-9">
-                            <li class="col-xs-6 col-sm-4">
-                                <img src="images/product-01.png" alt="">
-                                <div class="content">
-                                    <div class="title">17.4mm thickness ip67 power supply</div>
-                                    <div class="desc">vuo-020-0245</div>
-                                    <a href="product-list.html">
-                                        <img src="images/icon-more.png" alt="">
+                        <div class="col-sm-7 col-md-8">
+                            <ul id="carousel" class="owl">
+                                <li class="item">
+                                    <a href="product-detail.html">
+                                        <img src="images/product-01.png" alt="">
+                                        <div class="content">
+                                            <div class="title">17.4mm thickness ip67 power supply</div>
+                                            <div class="desc">vuo-020-0245</div>
+                                            <a href="product-list.html" class="more">
+                                                <img src="images/icon-more.png" alt="">
+                                            </a>
+                                        </div>
                                     </a>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4">
-                                <img src="images/product-02.png" alt="">
-                                <div class="content">
-                                    <div class="title">17.4mm thickness ip67 power supply</div>
-                                    <div class="desc">vuo-020-0245</div>
-                                    <a href="product-list.html">
-                                        <img src="images/icon-more.png" alt="">
+                                </li>
+                                <li class="item">
+                                    <a href="product-detail.html">
+                                        <img src="images/product-02.png" alt="">
+                                        <div class="content">
+                                            <div class="title">17.4mm thickness ip67 power supply</div>
+                                            <div class="desc">vuo-020-0245</div>
+                                            <a href="product-list.html" class="more">
+                                                <img src="images/icon-more.png" alt="">
+                                            </a>
+                                        </div>
                                     </a>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4">
-                                <img src="images/product-03.png" alt="">
-                                <div class="content">
-                                    <div class="title">17.4mm thickness ip67 power supply</div>
-                                    <div class="desc">vuo-020-0245</div>
-                                    <a href="product-list.html">
-                                        <img src="images/icon-more.png" alt="">
+                                </li>
+                                <li class="item">
+                                    <a href="product-detail.html">
+                                        <img src="images/product-03.png" alt="">
+                                        <div class="content">
+                                            <div class="title">17.4mm thickness ip67 power supply</div>
+                                            <div class="desc">vuo-020-0245</div>
+                                            <a href="product-list.html" class="more">
+                                                <img src="images/icon-more.png" alt="">
+                                            </a>
+                                        </div>
                                     </a>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4">
-                                <img src="images/product-03.png" alt="">
-                                <div class="content">
-                                    <div class="title">17.4mm thickness ip67 power supply</div>
-                                    <div class="desc">vuo-020-0245</div>
-                                    <a href="product-list.html">
-                                        <img src="images/icon-more.png" alt="">
+                                </li>
+                                <li class="item">
+                                    <a href="product-detail.html">
+                                        <img src="images/product-03.png" alt="">
+                                        <div class="content">
+                                            <div class="title">17.4mm thickness ip67 power supply</div>
+                                            <div class="desc">vuo-020-0245</div>
+                                            <a href="product-list.html" class="more">
+                                                <img src="images/icon-more.png" alt="">
+                                            </a>
+                                        </div>
                                     </a>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="next">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arrow next">
                             <img src="images/icon-next.png" alt="">
                         </div>
                     </div>
@@ -281,13 +293,13 @@
             </div>
             <div class="pictures">
                 <ul>
-                    <li class="col-xs-4">
+                    <li class="col-sm-4 col-xs-12">
                         <a href=""><img src="images/picture-01.png" alt=""></a>
                     </li>
-                    <li class="col-xs-4">
+                    <li class="col-sm-4 col-xs-12">
                         <a href=""><img src="images/picture-02.png" alt=""></a>
                     </li>
-                    <li class="col-xs-4">
+                    <li class="col-sm-4 col-xs-12">
                         <a href=""><img src="images/picture-03.png" alt=""></a>
                     </li>
                 </ul>
@@ -344,50 +356,55 @@
                 </div>
             </div>
             <div class="faq">
-                <div class="page-title">FAQ</div>
-                <div class="main">
-                    <ul>
-                        <li>
-                            <div class="Q">
-                                <div class="icon">Q</div>
-                                <div class="content">What’s the type of power supply do you have?</div>
-                            </div>
-                            <div class="A">
-                                <div class="icon">A</div>
-                                <div class="content">We focus on constant voltage & current LED drivers <br/> 0~10V/triac/DALI dimmable LED drivers</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Q">
-                                <div class="icon">Q</div>
-                                <div class="content">Do you have MOQ requirement?</div>
-                            </div>
-                            <div class="A">
-                                <div class="icon">A</div>
-                                <div class="content">Our MOQ is 100pcs, but we also accept your trial order/small order. Welcome！</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Q">
-                                <div class="icon">Q</div>
-                                <div class="content">What is the warranty?</div>
-                            </div>
-                            <div class="A">
-                                <div class="icon">A</div>
-                                <div class="content"> It is five years warranty for our high ending series products <br/> And we also supply two years warranty series products in some developing countries</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Q">
-                                <div class="icon">Q</div>
-                                <div class="content">What is LED?</div>
-                            </div>
-                            <div class="A">
-                                <div class="icon">A</div>
-                                <div class="content">LEDs are light-emitting diodes, or electronic components that produce light by converting electrical energy directly to light by the movement of electrons within the material of the diode. Because LEDs are highly efficient,...</div>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="page-title">FAQ</div>
+                        <a href="service.html" class="more">MORE >></a>
+                        <div class="main">
+                            <ul>
+                                <li class="col-xs-12 col-sm-6">
+                                    <div class="Q">
+                                        <div class="icon">Q</div>
+                                        <div class="content">What’s the type of power supply do you have?</div>
+                                    </div>
+                                    <div class="A">
+                                        <div class="icon">A</div>
+                                        <div class="content">We focus on constant voltage & current LED drivers <br/> 0~10V/triac/DALI dimmable LED drivers</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-6">
+                                    <div class="Q">
+                                        <div class="icon">Q</div>
+                                        <div class="content">Do you have MOQ requirement?</div>
+                                    </div>
+                                    <div class="A">
+                                        <div class="icon">A</div>
+                                        <div class="content">Our MOQ is 100pcs, but we also accept your trial order/small order. Welcome！</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-6">
+                                    <div class="Q">
+                                        <div class="icon">Q</div>
+                                        <div class="content">What is the warranty?</div>
+                                    </div>
+                                    <div class="A">
+                                        <div class="icon">A</div>
+                                        <div class="content"> It is five years warranty for our high ending series products <br/> And we also supply two years warranty series products in some developing countries</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-6">
+                                    <div class="Q">
+                                        <div class="icon">Q</div>
+                                        <div class="content">What is LED?</div>
+                                    </div>
+                                    <div class="A">
+                                        <div class="icon">A</div>
+                                        <div class="content">LEDs are light-emitting diodes, or electronic components that produce light by converting electrical energy directly to light by the movement of electrons within the material of the diode. Because LEDs are highly efficient,...</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -488,6 +505,7 @@
 
     <script src="images/js/jquery.min.js"></script>
     <script src="images/js/bootstrap.min.js"></script>
+    <script src="images/js/owl.carousel.js"></script>
     <script src="images/js/script.js"></script>
     <script>
         $('.about .tabs li').each(function (index){
@@ -495,6 +513,24 @@
                 $(this).addClass('active').siblings().removeClass('active')
                 $('.about .box>li').eq(index).addClass('active').siblings().removeClass('active')
             })
+        })
+
+        var owl = $('#carousel').owlCarousel({
+            items: 3,
+            margin: 20,
+            dots: false,
+		    lazyLoad: true,
+            pagination: false,
+            itemsMobile: [479, 1],
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [992, 2]
+        })
+
+        $('.product .prev').on('click', function (){
+            owl.trigger('owl.prev')
+        })
+        $('.product .next').on('click', function (){
+            owl.trigger('owl.next')
         })
     </script>
 </body>
