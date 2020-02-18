@@ -88,12 +88,12 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li class="dropdown">
-                            <a href="product.html" class="dropdown-toggle" data-toggle="dropdown">
+                            <a href="product-list.html" class="dropdown-toggle" data-toggle="dropdown">
                                 Products <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="product.html">Products</a></li>
-                                <li><a href="product.html">Products</a></li>
+                                <li><a href="product-list.html">Products</a></li>
+                                <li><a href="product-list.html">Products</a></li>
                             </ul>
                         </li>
                         <li><a href="application.html">Applications</a></li>
@@ -157,7 +157,7 @@
                         </ul>
                     </div>
                     <div class="content">
-                        <ul>
+                        <ul class="box">
                             <li class="active">
                                 <div class="col-md-5 about-pic">
                                     <img src="images/about.png" alt="">
@@ -192,7 +192,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="col-xs-12">
                                 <img src="images/equipment.png" alt="">
                             </li>
                             <li>
@@ -237,7 +237,7 @@
                                 <div class="content">
                                     <div class="title">17.4mm thickness ip67 power supply</div>
                                     <div class="desc">vuo-020-0245</div>
-                                    <a href="product.html">
+                                    <a href="product-list.html">
                                         <img src="images/icon-more.png" alt="">
                                     </a>
                                 </div>
@@ -247,7 +247,7 @@
                                 <div class="content">
                                     <div class="title">17.4mm thickness ip67 power supply</div>
                                     <div class="desc">vuo-020-0245</div>
-                                    <a href="product.html">
+                                    <a href="product-list.html">
                                         <img src="images/icon-more.png" alt="">
                                     </a>
                                 </div>
@@ -257,7 +257,7 @@
                                 <div class="content">
                                     <div class="title">17.4mm thickness ip67 power supply</div>
                                     <div class="desc">vuo-020-0245</div>
-                                    <a href="product.html">
+                                    <a href="product-list.html">
                                         <img src="images/icon-more.png" alt="">
                                     </a>
                                 </div>
@@ -267,7 +267,7 @@
                                 <div class="content">
                                     <div class="title">17.4mm thickness ip67 power supply</div>
                                     <div class="desc">vuo-020-0245</div>
-                                    <a href="product.html">
+                                    <a href="product-list.html">
                                         <img src="images/icon-more.png" alt="">
                                     </a>
                                 </div>
@@ -488,5 +488,13 @@
 
     <script src="images/js/jquery.min.js"></script>
     <script src="images/js/bootstrap.min.js"></script>
+    <script>
+        $('.about .tabs li').each(function (index){
+            $(this).on('click', function (){
+                $(this).addClass('active').siblings().removeClass('active')
+                $('.about .box>li').eq(index).addClass('active').siblings().removeClass('active')
+            })
+        })
+    </script>
 </body>
 </html>
