@@ -624,6 +624,13 @@ button, input[type='submit']{
     .product .arrow{
         display: none;
     }
+    .news{
+        margin: 0 0 80px;
+        padding: 100px 0 80px
+    }
+    .product{
+        margin: 0 0 100px
+    }
 }
 @media (max-width: 1199px) {
     .product .prev{
@@ -662,7 +669,7 @@ button, input[type='submit']{
 }
 @media (max-width: 767px) {
     .header .logo-box .icons{
-        margin: 20px 0;
+        margin: 10px 0;
         overflow: hidden;
     }
     .header .logo-box .icons img{
@@ -799,6 +806,9 @@ button, input[type='submit']{
     .pictures li:nth-of-type(2){
         padding: 0
     }
+    .pictures li img{
+        width: 100%
+    }
     .news{
         margin: 0 0 30px;
         padding: 25px 0 50px
@@ -825,6 +835,10 @@ button, input[type='submit']{
     }
     .faq li .A{
         font-size: 13px
+    }
+    .header .menu li{
+        line-height: 30px;
+        font-size: 14px
     }
 }
 @media (max-width: 360px) {
