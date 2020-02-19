@@ -12,7 +12,7 @@ a:link,a:hover{
     text-decoration: none
 }
 a:hover{
-    color: #308438
+    color: #308438 !important
 }
 img{
     max-width: 100%
@@ -32,6 +32,8 @@ button, input[type='submit']{
     content: '';
     display: block;
 }
+
+/* header */
 .header .top{
     width: 100%;
     background: #eaeaea;
@@ -107,6 +109,9 @@ button, input[type='submit']{
     color: #fff;
     line-height: 50px
 }
+.navbar .navbar-nav>li>a:hover{
+    color: #fff !important
+}
 .navbar .search{
     float: right;
     height: 50px;
@@ -114,7 +119,7 @@ button, input[type='submit']{
     background: #e64a19
 }
 
-/* 首页 */
+/* index */
 .about{
     margin: 95px auto 100px
 }
@@ -161,6 +166,9 @@ button, input[type='submit']{
     padding: 20px 34px;
     background: #f4f4f4;
     border-radius: 4px;
+}
+.about img{
+    width: 100%
 }
 .about .data li{
     text-align: center;
@@ -420,7 +428,7 @@ button, input[type='submit']{
     color: #308438;
 }
 
-/* 底部 */
+/* footer */
 .footer{
     padding: 60px 0 0;
     background: #333;
@@ -480,7 +488,7 @@ button, input[type='submit']{
     border-top: 1px solid #2b2b2b;
 }
 
-/* 公共 */
+/* common */
 .slider{
     top: 50%;
     right: 0;
@@ -607,8 +615,301 @@ button, input[type='submit']{
 .main>.ad .address .active{
     color: #308438;
 }
+.other{
+    padding: 70px 15px 200px
+}
+.left-menu .title{
+    width: 100%;
+    color: #fff;
+    height: 100px;
+    font-size: 22px;
+    text-indent: 20px;
+    line-height: 100px;
+    background: #308438;
+}
+.left-menu li:not(:first-child){
+    padding: 0 12px;
+    font-size: 18px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc
+}
+.left-menu li .box{
+    width: 100%;
+    padding: 25px 0;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc
+}
+.left-menu li:last-child{
+    border-bottom: 1px solid #ccc
+}
+.left-menu li:last-child .box{
+    border: none
+}
+.left-menu li a{
+    color: #333
+}
+.left-menu .active{
+    position: relative;
+}
+.left-menu .active:before{
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background: #308438
+}
+.left-menu .active a{
+    float: left;
+    color: #308438
+}
+.left-menu .active img{
+    float: right;
+    margin: 6px 0 0
+}
 
+/* about */
+.aboutus{
+    margin: 35px auto 95px
+}
+.aboutus img{
+    width: 100%
+}
+.aboutus .title{
+    font-size: 24px;
+    color: #308438;
+    margin: 15px 0
+}
+.aboutus p{
+    color: #333;
+    font-size: 14px
+}
+.products{
+    overflow: hidden;
+    margin: 0 0 170px
+}
+.products img{
+    width: 100%
+}
+.products .pics{
+    overflow: hidden;
+    margin: 0 0 60px
+}
+.products .col-sm-4, .products .col-xs-12{
+    padding: 0
+}
+.products .col-sm-4:nth-of-type(2){
+    padding: 0 5px
+}
 
+/* application */
+.app-list{
+    padding: 75px 0 160px
+}
+.app-list li img{
+    width: 100%
+}
+.app-list li .title{
+    color: #333;
+    font-size: 20px;
+    margin: 35px 0;
+    text-align: center;
+}
+.app-list li:hover .title{
+    color: #308438
+}
+
+/* contact */
+.contact{
+    margin: 0 0 50px
+}
+.contact .row{
+    border: 2px solid #f5f5f5
+}
+.contact .row>.title{
+    color: #000;
+    font-size: 20px;
+    margin: 0 0 30px
+}
+.contact .row>.title:after{
+    content: '';
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin: 10px 0 0;
+    background: #000;
+}
+.contact .way .sm{
+    margin: 0 0 15px;
+    overflow: hidden
+}
+.contact .way .big{
+    overflow: hidden;
+    margin: 0 0 65px
+}
+.contact .way .col-sm-6{
+    padding: 0 10px
+}
+.contact .way .box{
+    font-size: 16px;
+    color: #308438;
+    padding: 20px 30px;
+    position: relative;
+    border: 1px solid #ccc
+}
+.contact .way .box:after{
+    top: 50%;
+    left: 0;
+    width: 7px;
+    content: '';
+    height: 40px;
+    display: block;
+    position: absolute;
+    background: #308438;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.contact .way .title{
+    margin: 0 0 10px;
+}
+.contact .way .title img{
+    margin: 0 8px 0 0;
+    vertical-align: middle
+}
+.contact .way .title span{
+    vertical-align: middle
+}
+.contact .leave .title{
+    text-align: center;
+    margin: 0 0 25px;
+}
+.contact .leave .title span{
+    font-size: 24px;
+    border-bottom: 1px solid #000
+}
+.contact .leave .textarea{
+    margin: 25px 0 35px
+}
+.contact .leave label{
+    color: #666;
+    display: block;
+    font-size: 16px;
+    margin: 0 0 6px;
+}
+.contact .leave input, .contact .leave textarea{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #f2f2f2
+}
+.contact .leave textarea{
+    height: 85px;
+    outline: none;
+    resize: vertical
+}
+.contact .leave input[type='submit']{
+    width: 265px;
+    height: 50px;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    background: #e64a19
+}
+
+/* download */
+.download ul{
+    padding: 65px 50px 125px;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 15px 5px;
+}
+.download ul li{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin: 0 0 35px;
+    padding: 0 0 10px;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    border-bottom: 1px dashed #ccc
+}
+.download li .date{
+    flex: 1.6;
+    color: #333;
+    padding: 0 0 0 3%
+}
+.download li .info{
+    flex: 8;
+    color: #000;
+    font-size: 15px;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc
+}
+.download li .icon{
+    flex: 1;
+    height: 22px;
+    text-align: center;
+    background: url('../icon-download.png') center center no-repeat;
+    background-size: 20px 22px
+}
+.download li .icon:hover{
+    background: url('../icon-downloads.png') center center no-repeat;
+}
+.download li .date p{
+    font-size: 18px;
+    margin: 0 0 8px
+}
+.download li .date span{
+    font-size: 12px
+}
+
+/* service */
+.service ul{
+    padding: 35px 0 70px;
+    box-shadow: rgba(0,0,0,.1) 0px 0px 15px 5px;
+}
+.service ul li{
+    margin: 0 0 50px;
+}
+.service li .Q{
+    height: 60px;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 0 0 75px;
+    background: #d5d5d5;
+}
+.service li .A{
+    overflow: hidden;
+    font-size: 16px;
+    background: #f5f5f5;
+    padding: 20px 0 25px 75px;
+}
+.service li span{
+    color: #333;
+    float: left;
+}
+.service li span:last-child{
+    width: calc(100% - 100px)
+}
+.service li .icon{
+    width: 65px;
+    height: 60px;
+    color: #fff;
+    line-height: 60px;
+    font-size: 24px;
+    margin: 0 20px 0 0;
+    text-align: center;
+    background: #308438;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
 
 @media (max-width: 992px) {
     .navbar .navbar-nav>li>a{
@@ -630,6 +931,12 @@ button, input[type='submit']{
     }
     .product{
         margin: 0 0 100px
+    }
+    .service li .Q{
+        padding: 0 0 0 25px
+    }
+    .service li .A{
+        padding: 10px 0 15px 25px
     }
 }
 @media (max-width: 1199px) {
@@ -665,6 +972,23 @@ button, input[type='submit']{
         width: 20%;
         float: left;
         padding: 0 15px;
+    }
+    .contact .way .box{
+        margin: 0 0 15px
+    }
+    .contact .way .big .desc{
+        height: 68px
+    }
+    .contact .row{
+        padding: 35px 20px 65px;
+    }
+}
+@media (min-width: 992px) {
+    .contact .way .big .desc{
+        height: 45px
+    }
+    .contact .row{
+        padding: 55px 40px 85px;
     }
 }
 @media (max-width: 767px) {
@@ -839,6 +1163,90 @@ button, input[type='submit']{
     .header .menu li{
         line-height: 30px;
         font-size: 14px
+    }
+    .products{
+        margin: 0 0 50px
+    }
+    .products .pics{
+        margin: 0 0 20px
+    }
+    .products .pics .col-sm-4{
+        padding: 0;
+        margin: 0 auto 10px
+    }
+    .app-list{
+        padding: 35px 0 50px
+    }
+    .app-list li .title{
+        margin: 20px 0;
+        font-size: 18px
+    }
+    .contact .row{
+        padding: 35px 15px 50px
+    }
+    .contact .way .box{
+        margin: 0 0 15px
+    }
+    .contact .way .col-sm-6{
+        padding: 0
+    }
+    .contact .row>.title{
+        font-size: 18px
+    }
+    .contact .leave li{
+        padding: 0
+    }
+    .contact .leave .title span{
+        font-size: 22px
+    }
+    .contact .leave input[type='submit']{
+        width: 100%
+    }
+    .other{
+        padding: 35px 15px 100px
+    }
+    .left-menu{
+        padding: 0 15px 35px
+    }
+    .left-menu .title{
+        height: 60px;
+        line-height: 60px;
+        font-size: 18px;
+    }
+    .left-menu li .box{
+        padding: 15px 0;
+        font-size: 16px
+    }
+    .download ul{
+        padding: 25px 10px 40px
+    }
+    .download li .date{
+        flex: 2;
+        padding: 0;
+        text-align: center;
+    }
+    .download li .icon{
+        flex: 1.5
+    }
+    .download li .date p{
+        font-size: 16px;
+        margin: 0 0 4px
+    }
+    .download li .info{
+        padding: 12px;
+        font-size: 14px
+    }
+    .download ul li{
+        margin: 0 0 15px
+    }
+    .service ul li{
+        margin: 0 0 20px
+    }
+    .service li .Q{
+        padding: 0
+    }
+    .service li .A{
+        padding: 10px 0 15px 0
     }
 }
 @media (max-width: 360px) {
