@@ -368,7 +368,7 @@ button, input[type='submit']{
     background: #308438
 }
 .faq{
-    margin: 0 0 20px
+    margin: 0 0 60px
 }
 .faq li{
     margin: 0 0 20px
@@ -759,6 +759,9 @@ button, input[type='submit']{
     padding: 20px 30px;
     position: relative;
     border: 1px solid #ccc
+}
+.contact .way .box a{
+    color: #308438
 }
 .contact .way .box:after{
     top: 50%;
@@ -1243,10 +1246,20 @@ button, input[type='submit']{
         margin: 0 0 20px
     }
     .service li .Q{
-        padding: 0
+        padding: 0;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
     }
     .service li .A{
+        font-size: 14px;
         padding: 10px 0 15px 0
+    }
+    .service li .icon{
+        width: 45px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
     }
 }
 @media (max-width: 360px) {
