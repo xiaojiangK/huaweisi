@@ -48,6 +48,9 @@ button, input[type='submit']{
     line-height: 40px;
     padding-right: 40px
 }
+.header .menu li:last-child{
+    padding: 0
+}
 .header .menu li a{
     color: #616161;
     vertical-align: middle
@@ -58,7 +61,7 @@ button, input[type='submit']{
     vertical-align: middle
 }
 .header .top .dropdown{
-    float: right;
+    text-align: right
 }
 .header .dropdown .btn{
     padding: 0;
@@ -259,6 +262,8 @@ button, input[type='submit']{
     margin: 0 0 12px;
 }
 .product .owl .content .more{
+    color: #666;
+    font-size: 16px;
     float: right;
 }
 .product .owl li{
@@ -1066,6 +1071,8 @@ button, input[type='submit']{
     margin: 10px 0 20px
 }
 .pro-list li .more{
+    color: #666;
+    font-size: 16px;
     width: 100%;
     text-align: right;
     display: inline-block;
@@ -1172,12 +1179,15 @@ button, input[type='submit']{
     .product .arrow{
         display: none;
     }
+    .about{
+        margin: 35px auto 55px
+    }
     .news{
-        margin: 0 0 80px;
-        padding: 100px 0 80px
+        margin: 0 0 50px;
+        padding: 60px 0 30px
     }
     .product{
-        margin: 0 0 100px
+        margin: 0 0 60px
     }
     .service li .Q{
         padding: 0 0 0 25px
@@ -1311,11 +1321,6 @@ button, input[type='submit']{
     }
 }
 @media (max-width: 767px) {
-    .navbar .search{
-        float: none;
-        margin: 0 auto;
-        display: block;
-    }
     .header .logo-box .icons{
         margin: 10px 0;
         overflow: hidden;
