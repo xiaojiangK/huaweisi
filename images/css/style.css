@@ -1542,7 +1542,7 @@ button, input[type='submit']{
         font-size: 16px
     }
     .download ul{
-        padding: 25px 10px 40px
+        padding: 25px 10px
     }
     .download li .date{
         flex: 2;
@@ -1634,6 +1634,12 @@ button, input[type='submit']{
     }
     .message .main input[type='text']{
         margin: 15px 0
+    }
+    .service ul{
+        padding: 25px 0 10px
+    }
+    .about .content .intro .title{
+        font-size: 18px
     }
 }
 @media (max-width: 360px) {
