@@ -1311,6 +1311,11 @@ button, input[type='submit']{
     }
 }
 @media (max-width: 767px) {
+    .navbar .search{
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
     .header .logo-box .icons{
         margin: 10px 0;
         overflow: hidden;
