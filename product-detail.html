@@ -81,19 +81,19 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand visible-xs" href="/">
-                        <img src="images/logo.png" alt="">
+                        <img src="images/logo-sm.png" alt="">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="example-navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li class="dropdown">
-                            <a href="product.html" class="dropdown-toggle" data-toggle="dropdown">
+                            <a href="product-list.html" class="dropdown-toggle" data-toggle="dropdown">
                                 Products <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="product.html">Products</a></li>
-                                <li><a href="product.html">Products</a></li>
+                                <li><a href="product-list.html">Products</a></li>
+                                <li><a href="product-list.html">Products</a></li>
                             </ul>
                         </li>
                         <li><a href="application.html">Applications</a></li>
@@ -136,31 +136,43 @@
             </div>
             <div class="container other">
                 <div class="row">
-                    <div class="col-sm-4 left-menu">
+                    <div class="col-sm-4 col-lg-3 left-menu">
                         <ul>
                             <li class="title">PRODUCT CATEGORIES</li>
-                            <li class="active">
-                                <a href="product-list.html" class="box">Constant voltage LED driver</a>
+                            <li>
+                                <a href="product-list.html" class="box">
+                                    <span>Constant voltage LED driver</span>
+                                    <img src="images/icon-add-d.png" alt="">
+                                </a>
                             </li>
                             <li>
-                                <a href="product-list.html" class="box">Constant gurrent LEDdriver</a>
+                                <a href="product-list.html" class="box">
+                                    <span>Constant gurrent LEDdriver</span>
+                                    <img src="images/icon-add-d.png" alt="">
+                                </a>
                             </li>
                             <li>
-                                <a href="product-list.html" class="box">aimable led driver</a>
+                                <a href="product-list.html" class="box">
+                                    <span>aimable led driver</span>
+                                    <img src="images/icon-add-d.png" alt="">
+                                </a>
                             </li>
                             <li>
-                                <a href="product-list.html" class="box">OPM/ODM</a>
+                                <a href="product-list.html" class="box">
+                                    <span>OPM/ODM</span>
+                                    <img src="images/icon-add-d.png" alt="">
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-8 col-lg-9">
                         <div class="togglepic">
-                            <div class="col-sm-10">
-                                <img src="images/product-big.png" alt="">
+                            <div class="col-xs-9">
+                                <img src="images/product-01.png" alt="">
                             </div>
-                            <div class="col-sm-2">
-                                <img src="images/product-03.png" class="active" alt="">
-                                <img src="images/product-03.png" alt="">
+                            <div class="col-xs-3">
+                                <img src="images/product-01.png" class="active" alt="">
+                                <img src="images/product-02.png" alt="">
                                 <img src="images/product-03.png" alt="">
                             </div>
                         </div>
@@ -168,9 +180,9 @@
                             <div class="title">BIS CERTIFICATION POWER SUPPLY</div>
                             <div class="item">
                                 <div class="titles">
-                                    <div class="col-xs-6">Features</div>
-                                    <div class="col-xs-6">
-                                        <img src="iamges/feature.png" alt="">
+                                    <div class="col-xs-4 text">Features</div>
+                                    <div class="col-xs-8">
+                                        <img src="images/feature.png" alt="">
                                     </div>
                                 </div>
                                 <div class="content">
@@ -183,7 +195,7 @@
                             </div>
                             <div class="item">
                                 <div class="titles">
-                                    <div class="col-xs-6">Specifications</div>
+                                    <div class="col-xs-12 text">Specifications</div>
                                 </div>
                                 <div class="content">
                                     <table>
@@ -222,10 +234,10 @@
                             </div>
                             <div class="item">
                                 <div class="titles">
-                                    <div class="col-xs-6">MechanicalDrawing</div>
+                                    <div class="col-xs-12 text">MechanicalDrawing</div>
                                 </div>
                                 <div class="content">
-                                    <img src="iamges/drawing.png" alt="">
+                                    <img src="images/drawing.png" alt="">
                                     <div class="use">
                                         <div class="title">CONDITIONS OF USE</div>
                                         <p>(1)Operating environment and storage conditions</p>
@@ -342,5 +354,13 @@
     <script src="images/js/jquery.min.js"></script>
     <script src="images/js/bootstrap.min.js"></script>
     <script src="images/js/script.js"></script>
+    <script>
+        $('.togglepic .col-xs-3 img').each(function (){
+            $(this).on('click', function (){
+                $(this).addClass('active').siblings().removeClass('active')
+                $('.togglepic .col-xs-9 img').attr('src', $(this).attr('src'))
+            })
+        })
+    </script>
 </body>
 </html>
