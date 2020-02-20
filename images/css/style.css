@@ -1632,6 +1632,9 @@ button, input[type='submit']{
     .pro-detail .item .content{
         padding: 0
     }
+    .message .main input[type='text']{
+        margin: 15px 0
+    }
 }
 @media (max-width: 360px) {
     .about .tabs li{
