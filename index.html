@@ -517,6 +517,10 @@
     <script src="images/js/wow.min.js"></script>
     <script src="images/js/script.js"></script>
     <script>
+        $('.carousel').carousel({
+            interval: 3000
+        })
+
         $('.about .tabs li').each(function (index){
             $(this).on('click', function (){
                 $(this).addClass('active').siblings().removeClass('active')
