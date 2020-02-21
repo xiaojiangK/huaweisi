@@ -1167,7 +1167,7 @@ button, input[type='submit']{
 
 @media (min-width: 1680px) {
     .container{
-        width: 1580px
+        width: 1560px
     }
 }
 @media (max-width: 992px) {
