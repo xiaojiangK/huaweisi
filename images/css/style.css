@@ -1165,6 +1165,11 @@ button, input[type='submit']{
     font-size: 14px
 }
 
+@media (min-width: 1680px) {
+    .container{
+        width: 1580px
+    }
+}
 @media (max-width: 992px) {
     .navbar .navbar-nav>li>a{
         padding: 0 5px
