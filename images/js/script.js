@@ -1,3 +1,6 @@
+
+new WOW().init()
+
 $(function (){
     $('.message .icon').on('click', function (){
         if ($('.message .main').css('display') == 'none') {
