@@ -90,14 +90,14 @@ button, input[type='submit']{
 .header .logo-box .logo{
     margin: 22px 0 26px 0
 }
-.header .logo-box .icons{
+.header .icons{
     margin: 44px 0 0 0;
 }
-.header .logo-box .icons ul{
+.header .icons ul{
     display: flex;
     float: right;
 }
-.header .logo-box .icons li{
+.header .icons li{
     margin: 0 0 0 10px
 }
 .navbar{
@@ -1343,11 +1343,11 @@ button, input[type='submit']{
     }
 }
 @media (max-width: 767px) {
-    .header .logo-box .icons{
+    .header .icons{
         margin: 10px 0;
         overflow: hidden;
     }
-    .header .logo-box .icons img{
+    .header .icons img{
         width: 80%
     }
     .wrap>.main{
@@ -1395,11 +1395,7 @@ button, input[type='submit']{
         margin: 0 0 0 2px
     }
     .slider{
-        width: 40px;
-        padding: 25px 0 0;
-    }
-    .slider li{
-        margin: 0 0 25px
+        display: none
     }
     .message{
         width: 100%;
@@ -1452,7 +1448,7 @@ button, input[type='submit']{
         font-size: 12px;
     }
     .product{
-        margin: 0 0 85px
+        margin: 0 0 20px
     }
     .product .menu{
         margin: 0 0 20px
@@ -1484,9 +1480,12 @@ button, input[type='submit']{
     .pictures li img{
         width: 100%
     }
+    .faq{
+        margin: 0 0 30px
+    }
     .news{
-        margin: 0 0 30px;
-        padding: 25px 0 50px
+        margin: 0 0 15px;
+        padding: 25px 0 15px
     }
     .news li .pic img{
         width: 100%
@@ -1499,6 +1498,7 @@ button, input[type='submit']{
         font-size: 12px
     }
     .page-title{
+        margin: 0 0 15px;
         font-size: 32px;
         padding: 0 0 8px;
     }
