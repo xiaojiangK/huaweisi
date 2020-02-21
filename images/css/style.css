@@ -22,6 +22,9 @@ button, input[type='submit']{
     border: none;
     outline: none !important
 }
+.wrap{
+    overflow: hidden
+}
 .wrap>.main{
     padding: 0 0 65px
 }
@@ -144,6 +147,9 @@ button, input[type='submit']{
 .about .tabs li.active{
     color: #fff;
     background: #308438
+}
+.about .content{
+    overflow: hidden
 }
 .about .content>ul>li{
     display: none
@@ -621,9 +627,6 @@ button, input[type='submit']{
 .main>.ad .address .active{
     color: #308438;
 }
-.other{
-    padding: 70px 15px 200px
-}
 .left-menu .title{
     width: 100%;
     color: #fff;
@@ -693,8 +696,7 @@ button, input[type='submit']{
     font-size: 14px
 }
 .products{
-    overflow: hidden;
-    margin: 0 0 170px
+    overflow: hidden
 }
 .products img{
     width: 100%
@@ -711,9 +713,6 @@ button, input[type='submit']{
 }
 
 /* application */
-.app-list{
-    padding: 75px 0 160px
-}
 .app-list li img{
     width: 100%
 }
@@ -1286,6 +1285,15 @@ button, input[type='submit']{
     .pro-detail .item table td{
         padding: 8px 12px
     }
+    .other{
+        padding: 50px 10px 80px
+    }
+    .app-list{
+        padding: 50px 0 80px
+    }
+    .products{
+        margin: 0 0 80px
+    }
 }
 @media (min-width: 992px) {
     .contact .way .big .desc{
@@ -1323,6 +1331,15 @@ button, input[type='submit']{
     }
     .pro-detail .item table td{
         padding: 10px 15px
+    }
+    .other{
+        padding: 70px 15px 200px
+    }
+    .app-list{
+        padding: 75px 0 160px
+    }
+    .products{
+        margin: 0 0 170px
     }
 }
 @media (max-width: 767px) {
