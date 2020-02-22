@@ -573,7 +573,7 @@ button, input[type='submit']{
     position: absolute;
     background: #308438;
 }
-.slider .box a{
+.slider .box a, .slider .box a:hover{
     color: #fff;
 }
 .slider .box:after{
