@@ -1319,6 +1319,9 @@ button, input[type='submit']{
         font-size: 30px;
 		line-height: 88px
     }
+    .slider{
+        top: 10%
+    }
 }
 @media (max-width: 1199px) {
     .product .prev{
