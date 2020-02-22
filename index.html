@@ -142,26 +142,20 @@
                 </div>
                 </div>
             </nav>
-            <div id="myCarousel" class="carousel slide">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>   
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="images/banner.png" alt="First slide">
-                    </div>
-                    <div class="item">
-                        <img src="images/banner2.png" alt="Second slide">
-                    </div>
-                    <div class="item">
-                        <img src="images/banner3.jpg" alt="Third slide">
-                    </div>
-                </div>
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
-                <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
-            </div>
+            <ul id="ad-carousel" class="ad-carousel">
+                <li class="item">
+                    <img src="images/banner3.jpg" alt="First slide">
+                    <div class="caption">SMART ILLUMINATE THE WORLD</div>
+                </li>
+                <li class="item">
+                    <img src="images/banner.png" alt="First slide">
+                    <div class="caption">SMART ILLUMINATE THE WORLD</div>
+                </li>
+                <li class="item">
+                    <img src="images/banner2.png" alt="First slide">
+                    <div class="caption">SMART ILLUMINATE THE WORLD</div>
+                </li>
+            </ul>
         </div>
         <!-- 主体 -->
         <div class="main">
@@ -175,8 +169,8 @@
                         </ul>
                     </div>
                     <div class="content wow fadeInUp">
-                        <ul class="box">
-                            <li class="active">
+                        <ul class="box" id="us-carousel">
+                            <li class="item">
                                 <div class="col-md-5 about-pic">
                                     <img src="images/about.png" alt="">
                                 </div>
@@ -191,29 +185,29 @@
                                     <div class="data">
                                         <ul>
                                             <li class="col-xs-6 col-sm-3">
-                                                <div class="title">6000<span>㎡</span> <span class="add">+</span></div>
+                                                <div class="title"><span class="num">6000</span> <span>㎡</span> <span class="add">+</span></div>
                                                 <div class="desc">production areas</div>
                                             </li>
                                             <li class="col-xs-6 col-sm-3">
-                                                <div class="title">10 Years</div>
+                                                <div class="title"><span class="num">10</span> Years</div>
                                                 <div class="desc">production experience</div>
                                             </li>
                                             <li class="col-xs-6 col-sm-3">
-                                                <div class="title">120 <span class="add">+</span></div>
+                                                <div class="title"><span class="num">120</span> <span class="add">+</span></div>
                                                 <div class="desc">employees</div>
                                             </li>
                                             <li class="col-xs-6 col-sm-3">
-                                                <div class="title">10 ltem</div>
+                                                <div class="title"><span class="num">10</span> ltem</div>
                                                 <div class="desc">patents certificate</div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li class="col-xs-12">
+                            <li class="item col-xs-12">
                                 <img src="images/equipment.png" alt="">
                             </li>
-                            <li>
+                            <li class="item">
                                 <div class="col-xs-6 col-2">
                                     <img src="images/cert-1.png" alt="">
                                 </div>
@@ -302,13 +296,22 @@
             <div class="pictures">
                 <ul>
                     <li class="col-sm-4 col-xs-12 wow fadeInUp">
-                        <a href=""><img src="images/picture-01.png" alt=""></a>
+                        <a href="">
+                            <img src="images/picture-01.png" alt="">
+                            <p>BEIJING NATIONAL DAY</p>
+                        </a>
                     </li>
                     <li class="col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <a href=""><img src="images/picture-02.png" alt=""></a>
+                        <a href="">
+                            <img src="images/picture-02.png" alt="">
+                            <p>GUANGZHOU TOWER</p>
+                        </a>
                     </li>
                     <li class="col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-                        <a href=""><img src="images/picture-03.png" alt=""></a>
+                        <a href="">
+                            <img src="images/picture-03.png" alt="">
+                            <p>SHANGHAI WORPO EXPO</p>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -422,19 +425,34 @@
             <div class="slider">
                 <ul>
                     <li>
-                       <a href="tel:86-756-8601770"><img src="images/icon-tels.png" alt=""></a>
+                        <img src="images/icon-tels.png" alt=""/>
+                        <div class="box">
+                            <a href="tel:86-756-8601770">86-756-8601770</a>
+                        </div>
                     </li>
                     <li>
-                        <a href="tel:86-756-8601770"><img src="images/icon-phone.png" alt=""></a>
+                        <img src="images/icon-phone.png" alt=""/>
+                        <div class="box">
+                            <a href="tel:86-756-8601770">86-756-8601770</a>
+                        </div>
                     </li>
                     <li>
-                        <a href=""><img src="images/icon-letters.png" alt=""></a>
+                        <img src="images/icon-letters.png" alt=""/>
+                        <div class="box">
+                            <a href="mailto:info@hl-zh.com">info@hl-zh.com</a>
+                        </div>
                     </li>
                     <li>
-                        <a href=""><img src="images/icon-son.png" alt=""></a>
+                        <img src="images/icon-son.png" alt=""/>
+                        <div class="box">
+                            <a href="">test/test</a>
+                        </div>
                     </li>
                     <li>
-                        <a href=""><img src="images/icon-code.png" alt=""></a>
+                        <img src="images/icon-code.png" alt=""/>
+                        <div class="box qrcode">
+                            <img src="images/qrcode.png" alt=""/>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -517,15 +535,36 @@
     <script src="images/js/wow.min.js"></script>
     <script src="images/js/script.js"></script>
     <script>
-        $('.carousel').carousel({
-            interval: 3000
+        var aTabs = $('.about .tabs li')
+        var usOwl = $('#us-carousel').owlCarousel({
+            items: 1,
+            dots: false,
+		    lazyLoad: true,
+            autoPlay: 3000,
+            pagination: false,
+            itemsMobile: [479, 1],
+            itemsDesktop: [1199, 1],
+            itemsDesktopSmall: [992, 1],
+            afterMove() {
+                $(aTabs).eq(this.currentItem).addClass('active').siblings().removeClass('active')
+            }
+        })
+        $(aTabs).each(function (i){
+            $(this).on('click', function (){
+                usOwl.trigger('owl.goTo', i)
+                $(this).addClass('active').siblings().removeClass('active')
+            })
         })
 
-        $('.about .tabs li').each(function (index){
-            $(this).on('click', function (){
-                $(this).addClass('active').siblings().removeClass('active')
-                $('.about .box>li').eq(index).addClass('active').siblings().removeClass('active')
-            })
+        $('#ad-carousel').owlCarousel({
+            items: 1,
+            dots: true,
+		    lazyLoad: true,
+            autoPlay: 3000,
+            pagination: true,
+            itemsMobile: [479, 1],
+            itemsDesktop: [1199, 1],
+            itemsDesktopSmall: [992, 1]
         })
 
         var owl = $('#carousel').owlCarousel({
@@ -544,6 +583,47 @@
         })
         $('.product .next').on('click', function (){
             owl.trigger('owl.next')
+        })
+
+        // 动态加载数字
+        var flag = true
+        var target = []
+        var timer = null
+        var count = [0, 0, 0, 0]
+
+        $('.about .num').each(function (){
+            target.push(Number.parseFloat($(this).text()))
+            $(this).text(0)
+        })
+
+        function loadData() {
+            if (flag) {
+                // 进入屏幕
+                if ($(window).scrollTop() >= ($('.about .data').offset().top - $(window).height())) {
+                    flag = false
+                    clearInterval(timer)
+                    timer = setInterval(function (){
+                        for (var i = 0; i < $('.about .num').length; i++) {
+                            if (i == 0 && count[i] < target[i]) {
+                                count[i] += 100
+                            } else if (i == 2 && count[i] < target[i]) {
+                                count[i] += 2
+                            } else if (count[i] < target[i]) {
+                                count[i] += 1
+                            }
+                            if (count[i] <= target[i]) {
+                                $('.about .num').eq(i).text(count[i])
+                            }
+                        }
+                    }, 20)
+                }
+            }
+        }
+
+        loadData()
+
+        $(window).scroll(function(){
+            loadData()
         })
     </script>
 </body>
