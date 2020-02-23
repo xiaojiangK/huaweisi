@@ -1457,6 +1457,9 @@ button, input[type='submit']{
     }
 }
 @media (max-width: 767px) {
+    .wrap{
+        padding: 0 0 50px
+    }
     .header .icons{
         margin: 10px 0;
         overflow: hidden;
