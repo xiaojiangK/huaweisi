@@ -70,6 +70,10 @@ button, input[type='submit']{
     background: none;
     line-height: 40px
 }
+.header .top .dropdown-menu{
+    right: 0;
+    left: auto
+}
 .header .dropdown img{
     width: 22px;
     margin: 0 3px 0 0;
@@ -99,8 +103,22 @@ button, input[type='submit']{
 }
 .navbar{
     margin: 0;
+    border: 0;
     border-radius: 0;
     background: #262626
+}
+.navbar .dropdown-menu{
+    max-width: 100%;
+    background: #464f5e
+}
+.navbar .dropdown-menu>li>a{
+    color: #fff;
+    white-space: inherit;
+    border-bottom:1px solid #ddd
+}
+.navbar .dropdown-menu>li>a:hover{
+    color: #fff !important;
+    background: #2e3643
 }
 .navbar .navbar-brand{
     padding: 5px 15px

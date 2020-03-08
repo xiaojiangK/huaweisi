@@ -12,7 +12,7 @@ $(function (){
 })
 
 $(window).scroll(function (){
-    if ($(window).scrollTop() > $('#ad-carousel').offset().top) {
+    if ($(window).scrollTop() > ($('.logo-box').offset().top + $('.logo-box').height())) {
         $('.navbar').addClass('navbar-fixed-top')
     } else {
         $('.navbar').removeClass('navbar-fixed-top')
